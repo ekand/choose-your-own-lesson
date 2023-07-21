@@ -39,17 +39,15 @@ for page in pages:
         page.video_title = page.title
 
 for page in pages:
+    video_id = page.video_url.split('/')[-1]
+    youtube_s = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    s = f'Title: {page.title}\nDate: 2023-07-21\nCategory: Lesson\nslug: {page.slug}\n\n' \
+        f'###Watch this video:  ' \
+        f'{youtube_s}  \n'
+    if page.next_lesson is not None:
+        s += f'###' + page.next_lesson.question_text + '\n\n'
+
+        for answer in page.next_lesson.list_of_answers:
+            s += f'{answer.answer_text}    [Go here]({list(filter(lambda p: p.id == answer.id_of_page_with_answer, pages))[0].slug}.html)\n\n'
     with open('pelican/content/' + page.slug + '.md', 'w') as out_file:
-        video_id = page.video_url.split('/')[-1]
-        youtube_s = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-        s = f'Title: {page.title}\nDate: 2023-07-21\n Category: Lesson\nslug: {page.slug}\n\n' \
-            f'###Watch this video: ' \
-            f'{youtube_s}  \n'
-            #f'[{page.video_title}]({page.video_url})\n\n'
-        if page.next_lesson is not None:
-            s += f'###' + page.next_lesson.question_text + '\n\n'
-
-            for answer in page.next_lesson.list_of_answers:
-                s += f'{answer.answer_text}    [Go here]({list(filter(lambda p: p.id == answer.id_of_page_with_answer, pages))[0].slug}.html)\n\n'
-
         out_file.write(s)
