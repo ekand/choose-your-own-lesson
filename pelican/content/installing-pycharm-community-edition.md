@@ -10,9 +10,9 @@ slug: installing-pycharm-community-edition
 
 ###QuestionForViewer: Do you have any additional questions?
 
-How do I install Python? Can you guide me through the steps for my computer in detail?    [Installing Python](installing-python.html)
+[How do I install Python? Can you guide me through the steps for my computer in detail? Installing Python](installing-python.html)
 
-How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail.    [Installing PyCharm Community Edition](installing-pycharm-community-edition.html)
+[How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail. Installing PyCharm Community Edition](installing-pycharm-community-edition.html)
 
 
 
