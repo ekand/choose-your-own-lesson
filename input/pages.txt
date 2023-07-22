@@ -1,0 +1,59 @@
+The Anchor Pages:
+
+-
+- Title: Welcome to Learn Python By Making Music, Hello World
+  - Anchor Video: Yes
+  - Title:
+  - Script:
+    "text
+    Welcome to Learn Python By Making Music! This is a "Choose Your Own Lesson" Lesson produced by Erik K Anderson.
+    "
+  - Possible Questions And the Associated Supporting Pages
+    - Why would I want to learn Python By making music?
+      - Supporting Video: why
+        "text
+        Learning Python by making music is a fun and creative way to explore programming. It offers immediate feedback and engages beginners. By combining music and Python, you will gain practical skills, problem-solving abilities, and access to a vibrant community of creative coders.
+        "
+    - What is Choose Your Own Lesson?
+      - Supporting Video: Choose Your Own Lesson is ...
+        "text
+        go on..."
+    - What is Python?
+      - Supporting Video: Python Is...
+        "text
+        Python is a versatile and popular programming language known for its simplicity and readability.
+        "
+    - What will be the main focus of this lesson?
+      - Supporting Video: We will learn some Python Programming basics by studying a simple and fun music “Hello World” program in Python.
+    - What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?
+      - No prior knowledge is required
+    - Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?
+      - A future section of this lesson will cover installation and setup.
+- Title: You will need some software to follow along on your computer. Let’s get that set up now.
+  - Video: install Python, install PyCharm Community Edition.
+  - Possible questions
+    - How do I install Python? Can you guide me through the steps for my computer in detail?
+      - Video: Installing Python
+    - How do I install PyCharm Communiy Edition? Can you guide me through the steps for my computer in detail.
+      - Video: Installing PyCharm Community Edition
+- Let's take a first look at the code for this lesson.
+  - Video: Here's what the code looks like. It's hosted on GitHub
+  - Possible Questions:
+    - What is GitHub?
+      - Video: GitHub is …
+    - What does .py mean?
+      - .py is a file extension which tells humans and computers that this is a Python source code file.
+    - Why is it called main.py?
+    - Can I see the code myself?
+      - Later on I will show you how to access the code itself.
+    - I don’t know what any of this means.
+      - Don't worry, we'll break it down piece by piece.
+- Wrapping up
+  - Anchor Video
+  - Possible Quesions
+    - Can you tell us about any real-world applications of Python programming in the music industry? How is Python used in this context?
+      - Um
+    - Are we going to learn about Python programming, music theory, or a combination of both?
+      - This lesson will be largely about Python programming, with a little bit of music theory incidentally mixed in.
+    - Will we have opportunities to experiment and customize the music we create, or will the lesson be more focused on following specific instructions?
+      - This lesson will be more proscriptive, but you are always welcome to try modifying the code to suit your own creative desires.

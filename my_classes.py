@@ -10,21 +10,26 @@ from dataclasses import dataclass, field
 #     def total_cost(self) -> float:
 #         return self.unit_price * self.quantity_on_hand
 @dataclass
-class Answer:
-    answer_text: str
+class Response:
+    response_text: str
     id_of_page_with_answer: str
 
 @dataclass
-class NextLessonStructure:
-    question_text: str
-    list_of_answers: list[Answer] = field(default_factory=Answer)
+class StudentResponses:
+    list_of_responses: list[Response] = field(default_factory=Response)
 
 @dataclass
 class Page:
     id: str
+    is_anchor_page: bool
     title: str
     slug: str
+    additional_text: str
     video_url: str
     video_title: str
-    next_lesson: field(default_factory=NextLessonStructure)
+    next_anchor_page_id: str  # may need to initialize as '' then fill in later, or may be '' for last anchor page
+    supporting_anchor_page_id: str  # '' if is_anchor_page, also may need to initialize as '' then fill in later
+    question_for_viewer: str  # may be zero for special pages with no questions
+    student_responses: field(default_factory=StudentResponses)  # None if not is_anchor_page
+
 

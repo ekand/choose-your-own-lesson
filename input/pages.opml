@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<opml version="2.0">
+  <head>
+    <ownerEmail>
+      hastyquickbeam@gmail.com
+    </ownerEmail>
+  </head>
+  <body>
+    <outline text="AnchorPages:">
+      <outline text="Title: Welcome to Learn Python By Making Music, Hello World">
+        <outline text="VideoTitle:" />
+        <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
+        <outline text="VideoScript:" _note="text&#10;Welcome to Learn Python By Making Music! This is a &quot;Choose Your Own Lesson&quot; Lesson produced by Erik K Anderson.&#10;" />
+        <outline text="QuestionForViewer: Do you have any questions?" />
+        <outline text="StudentResponses: ">
+          <outline text="Response: Why would I want to learn Python By making music?">
+            <outline text="SupportingPageTitle Video: why" _note="text&#10;Learning Python by making music is a fun and creative way to explore programming. It offers immediate feedback and engages beginners. By combining music and Python, you will gain practical skills, problem-solving abilities, and access to a vibrant community of creative coders.&#10;" />
+          </outline>
+          <outline text="Response: What is Choose Your Own Lesson?">
+            <outline text="Supporting Video: Choose Your Own Lesson is ..." _note="text&#10;go on..." />
+          </outline>
+          <outline text="Response: What is Python?">
+            <outline text="Supporting Video: Python Is..." _note="text&#10;Python is a versatile and popular programming language known for its simplicity and readability.&#10;" />
+          </outline>
+          <outline text="Response: What will be the main focus of this lesson?">
+            <outline text="Supporting Video: We will learn some Python Programming basics by studying a simple and fun music “Hello World” program in Python." />
+          </outline>
+          <outline text="Response: What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?">
+            <outline text="No prior knowledge is required" />
+          </outline>
+          <outline text="Response: Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?">
+            <outline text="A future section of this lesson will cover installation and setup." />
+          </outline>
+        </outline>
+      </outline>
+      <outline text="Title: Software Setup">
+        <outline text="VideoTitle: " />
+        <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
+        <outline text="VideoScript:" _note="text&#10;This is the script" />
+        <outline text="QuestionForViewer: Do you have any questions?" />
+        <outline text="StudentResponses:">
+          <outline text="Response: How do I install Python? Can you guide me through the steps for my computer in detail?">
+            <outline text="Video: Installing Python" />
+          </outline>
+          <outline text="Response: How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail.">
+            <outline text="Video: Installing PyCharm Community Edition" />
+          </outline>
+        </outline>
+      </outline>
+      <outline text="Title: First Look At The Code">
+        <outline text="VideoTitle: " />
+        <outline text="VideoURL: videourl" />
+        <outline text="VideoScript:" _note="text&#10;This is the videl script... Here's what the code looks like. It's hosted on GitHub&#10;" />
+        <outline text="QuestionForViewer: Do you have any questions?" />
+        <outline text="StudentResponses: ">
+          <outline text="Response: What is GitHub?">
+            <outline text="Video: GitHub is …" />
+          </outline>
+          <outline text="Response: What does .py mean?">
+            <outline text=".py is a file extension which tells humans and computers that this is a Python source code file. " />
+          </outline>
+          <outline text="Response: Why is it called &lt;a href=&quot;http://main.py&quot;&gt;main.py&lt;/a&gt;?" />
+          <outline text="Response: Can I see the code myself?">
+            <outline text="Later on I will show you how to access the code itself. " />
+          </outline>
+          <outline text="Response: I don’t know what any of this means?">
+            <outline text="Don't worry, we'll break it down piece by piece." />
+          </outline>
+        </outline>
+      </outline>
+      <outline text="Title: Wrapping up">
+        <outline text="Anchor Video" />
+        <outline text="Possible Quesions">
+          <outline text="Can you tell us about any real-world applications of Python programming in the music industry? How is Python used in this context?">
+            <outline text="Um" />
+          </outline>
+          <outline text="Are we going to learn about Python programming, music theory, or a combination of both?">
+            <outline text="This lesson will be largely about Python programming, with a little bit of music theory incidentally mixed in." />
+          </outline>
+          <outline text="Will we have opportunities to experiment and customize the music we create, or will the lesson be more focused on following specific instructions?">
+            <outline text="This lesson will be more proscriptive, but you are always welcome to try modifying the code to suit your own creative desires. " />
+          </outline>
+        </outline>
+      </outline>
+    </outline>
+  </body>
+</opml>
