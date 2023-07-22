@@ -14,22 +14,58 @@
         <outline text="QuestionForViewer: Do you have any questions?" />
         <outline text="StudentResponses: ">
           <outline text="Response: Why would I want to learn Python By making music?">
-            <outline text="SupportingPageTitle Video: why" _note="text&#10;Learning Python by making music is a fun and creative way to explore programming. It offers immediate feedback and engages beginners. By combining music and Python, you will gain practical skills, problem-solving abilities, and access to a vibrant community of creative coders.&#10;" />
+            <outline text="Title: Why You Might Want To Learn Python By Making Music">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videourl" />
+              <outline text="VideoScript: " _note="text&#10;Learning Python by making music is a fun and creative way to explore programming. It offers immediate feedback and engages beginners. By combining music and Python, you will gain practical skills, problem-solving abilities, and access to a vibrant community of creative coders.&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" _note="&#10;" />
+            </outline>
           </outline>
           <outline text="Response: What is Choose Your Own Lesson?">
-            <outline text="Supporting Video: Choose Your Own Lesson is ..." _note="text&#10;go on..." />
+            <outline text="Title: Choose Your Own Lesson">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videlurl" />
+              <outline text="VideoScript:" _note="text&#10;video script here&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+            </outline>
           </outline>
           <outline text="Response: What is Python?">
-            <outline text="Supporting Video: Python Is..." _note="text&#10;Python is a versatile and popular programming language known for its simplicity and readability.&#10;" />
+            <outline text="Title: About Python">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videlurl" />
+              <outline text="VideoScript:" _note="text&#10;Python is a versatile and popular programming language known for its simplicity and readability.&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+            </outline>
           </outline>
           <outline text="Response: What will be the main focus of this lesson?">
-            <outline text="Supporting Video: We will learn some Python Programming basics by studying a simple and fun music “Hello World” program in Python." />
+            <outline text="Title: The Main Focus Of This Lesson">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videlurl" />
+              <outline text="VideoScript:" _note="text&#10;We will learn some Python Programming basics by studying a simple and fun music “Hello World” program in Python.&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+            </outline>
           </outline>
           <outline text="Response: What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?">
-            <outline text="No prior knowledge is required" />
+            <outline text="Title: No Prior Knowledge Is Needed">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videlurl" />
+              <outline text="VideoScript:" _note="text&#10;No Prior Knowledge is needed&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+            </outline>
           </outline>
           <outline text="Response: Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?">
-            <outline text="A future section of this lesson will cover installation and setup." />
+            <outline text="Title: Setup And Installation">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videlurl" />
+              <outline text="VideoScript:" _note="text&#10;A future section of this lesson will cover installation and setup.&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+            </outline>
           </outline>
         </outline>
       </outline>
@@ -40,10 +76,22 @@
         <outline text="QuestionForViewer: Do you have any questions?" />
         <outline text="StudentResponses:">
           <outline text="Response: How do I install Python? Can you guide me through the steps for my computer in detail?">
-            <outline text="Video: Installing Python" />
+            <outline text="Title: Installing Python">
+              <outline text="VideoTitle:" />
+              <outline text="VideoURL: videourl" />
+              <outline text="VideoScript: " _note="text&#10;installing Python" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated&amp;gt;" />
+            </outline>
           </outline>
           <outline text="Response: How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail.">
-            <outline text="Video: Installing PyCharm Community Edition" />
+            <outline text="Title: Installing PyCharm Community Edition">
+              <outline text="VideoTitle: " />
+              <outline text="VideoURL: videourl" />
+              <outline text="VideoScript: " _note="text&#10;Video: Installing PyCharm Community Edition&#10;" />
+              <outline text="QuestionForViewer: Do you have any additional questions?" />
+              <outline text="StudentResponses: &amp;lt;auto-generated&amp;gt;" />
+            </outline>
           </outline>
         </outline>
       </outline>

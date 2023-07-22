@@ -1,7 +1,7 @@
-Title: Choose Your Own Lesson
+Title: Python Is
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: python-is
 
 
 
@@ -14,9 +14,9 @@ Why would I want to learn Python By making music?    [Why You Might Want To Lear
 
 What is Choose Your Own Lesson?    [Choose Your Own Lesson](choose-your-own-lesson.html)
 
-What is Python?    [About Python](about-python.html)
+What is Python?    [Python Is](python-is.html)
 
-What will be the main focus of this lesson?    [The Main Focus Of This Lesson](the-main-focus-of-this-lesson.html)
+What will be the main focus of this lesson?    [The Main Focus Of This Lesson Is](the-main-focus-of-this-lesson-is.html)
 
 What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?    [No Prior Knowledge Is Needed](no-prior-knowledge-is-needed.html)
 

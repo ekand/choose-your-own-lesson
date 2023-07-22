@@ -1,7 +1,7 @@
-Title: Choose Your Own Lesson
+Title: No Prior Knowledge Is Needed
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: no-prior-knowledge-is-needed
 
 
 

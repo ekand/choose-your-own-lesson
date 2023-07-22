@@ -1,7 +1,7 @@
-Title: Choose Your Own Lesson
+Title: The Main Focus Of This Lesson
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: the-main-focus-of-this-lesson
 
 
 

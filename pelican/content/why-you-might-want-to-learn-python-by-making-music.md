@@ -1,12 +1,12 @@
-Title: Choose Your Own Lesson
+Title: Why You Might Want To Learn Python By Making Music
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: why-you-might-want-to-learn-python-by-making-music
 
 
 
 ### Watch this video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VideoURL: videlurl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VideoURL: videourl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ###QuestionForViewer: Do you have any additional questions?
 

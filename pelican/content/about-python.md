@@ -1,7 +1,7 @@
-Title: Choose Your Own Lesson
+Title: About Python
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: about-python
 
 
 

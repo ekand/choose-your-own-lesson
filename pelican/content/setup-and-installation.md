@@ -1,7 +1,7 @@
-Title: Choose Your Own Lesson
+Title: Setup And Installation
 Date: 2023-07-21
 Category: Lesson
-slug: choose-your-own-lesson
+slug: setup-and-installation
 
 
 
