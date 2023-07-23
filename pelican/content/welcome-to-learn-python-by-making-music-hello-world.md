@@ -1,4 +1,4 @@
-Title: Welcome to Learn Python By Making Music, Hello World
+Title: Welcome to Learn Python By Making Music, Hello World!
 Date: 2023-07-21
 Category: Lesson
 slug: welcome-to-learn-python-by-making-music-hello-world
@@ -10,19 +10,19 @@ slug: welcome-to-learn-python-by-making-music-hello-world
 
 ###Do you have any questions?
 
-[Why would I want to learn Python By making music? Why You Might Want To Learn Python By Making Music](why-you-might-want-to-learn-python-by-making-music.html)
+[Why would I want to learn Python By making music?](why-you-might-want-to-learn-python-by-making-music.html)
 
-[What is Choose Your Own Lesson? Choose Your Own Lesson](choose-your-own-lesson.html)
+[What is Choose Your Own Lesson?](choose-your-own-lesson.html)
 
-[What is Python? About Python](about-python.html)
+[What is Python?](about-python.html)
 
-[What will be the main focus of this lesson? The Main Focus Of This Lesson](the-main-focus-of-this-lesson.html)
+[What will be the main focus of this lesson?](the-main-focus-of-this-lesson.html)
 
-[What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand? No Prior Knowledge Is Needed](no-prior-knowledge-is-needed.html)
+[What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?](no-prior-knowledge-is-needed.html)
 
-[Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process? Setup And Installation](setup-and-installation.html)
+[Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?](setup-and-installation.html)
 
-[I have no questions, take me to the next Anchor Video: Software Setup](software-setup.html)
+[I have no questions, take me to the next Anchor Video:](software-setup.html)
 
 
 

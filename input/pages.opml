@@ -7,7 +7,7 @@
   </head>
   <body>
     <outline text="AnchorPages:">
-      <outline text="Title: Welcome to Learn Python By Making Music, Hello World">
+      <outline text="Title: Welcome to Learn Python By Making Music, Hello World!">
         <outline text="VideoTitle:" />
         <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
         <outline text="VideoScript:" _note="text&#10;Welcome to Learn Python By Making Music! This is a &quot;Choose Your Own Lesson&quot; Lesson produced by Erik K Anderson.&#10;" />

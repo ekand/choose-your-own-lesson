@@ -65,7 +65,7 @@ def parse_opml_course_from_workflowy():
                 supporting_page_video_url = [child for child in opml_student_response[0] if child.text.startswith(label)][0].text
                 supporting_page_video_title = supporting_page_title  # todo finesse me
                 label = 'QuestionForViewer: '
-                supporting_page_question_for_viewer = [child for child in opml_student_response[0] if child.text.startswith(label)][0].text
+                supporting_page_question_for_viewer = [child for child in opml_student_response[0] if child.text.startswith(label)][0].text[len(label):]
                 next_anchor_page_id = future_anchor_page.id if future_anchor_page else ''
                 student_responses_for_supporting_page = copy.deepcopy(student_responses)
                 if future_anchor_page is not None:

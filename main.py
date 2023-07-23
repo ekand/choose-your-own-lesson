@@ -187,7 +187,7 @@ for page in pages:
                 #print(response.id_of_page_with_answer)
                 page_with_answer = list(filter(lambda p: p.id == response.id_of_page_with_answer, pages))[0]
                 slug_of_page_with_answer = page_with_answer.slug
-                questions_s += f'[{response.response_text} {page_with_answer.title}]({slug_of_page_with_answer}.html)\n\n'
+                questions_s += f'[{response.response_text}]({slug_of_page_with_answer}.html)\n\n'
     page_s = page_template.format(page_title=page.title,
                                   page_slug=page.slug,
                                   additional_text_s=page.additional_text,
