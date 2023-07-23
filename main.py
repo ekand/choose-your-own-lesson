@@ -35,7 +35,7 @@ for page in pages:
         try:
             student_responses = list(filter(lambda p: p.id == page.supporting_anchor_page_id, pages))[0].student_responses
             # hacky fix to add "more" to "I have no questions"
-            for response in student_responses:
+            for response in student_responses.list_of_responses:
                 if response.response_text.startswith('I have no questions'):
                     response.response_text = response.response_text.replace('no questions', 'no more questions')
         except IndexError:
