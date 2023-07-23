@@ -69,7 +69,7 @@ def parse_opml_course_from_workflowy():
                 next_anchor_page_id = future_anchor_page.id if future_anchor_page else ''
                 student_responses_for_supporting_page = copy.deepcopy(student_responses)
                 if future_anchor_page is not None:
-                    student_responses_for_supporting_page.append(Response("I have no further questions, take me to the next Anchor Video:", future_anchor_page.id))
+                    student_responses_for_supporting_page.append(Response("<this will never get displayed> I have no further questions, take me to the next Anchor Video:", future_anchor_page.id))
                 supporting_page = Page(id=str(uuid.uuid4()), is_anchor_page=False,
                                        title=supporting_page_title, slug=supporting_page_slug,
                                        additional_text=supporting_page_additional_text,
