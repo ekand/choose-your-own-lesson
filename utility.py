@@ -10,10 +10,33 @@ def parse_opml_course_from_workflowy():
 
     outline = opml.parse('input/pages.opml')
     # print(outline)
-    anchor_pages = outline[0]
+    opml_learn_python_by_making_music = outline[0]
+    opml_the_code = outline[0]
+    opml_anchor_pages = opml_learn_python_by_making_music[1]
+    opml_special_pages = opml_learn_python_by_making_music[2]
     pages = []
     future_anchor_page = None
-    for i, opml_anchor_page in enumerate(anchor_pages[::-1]):
+    special_pages = []
+    for i, opml_special_page in enumerate(opml_special_pages):
+        print('i', i, 'hello 289457298374')
+        title_text_raw = opml_special_page.text
+        label = 'Title: '
+        assert title_text_raw.startswith(label)
+        title = opml_special_page.text[len(label):]
+        slug = slugify(title)
+        label = 'AdditionalText: '
+        for thing in opml_special_page:
+            print(thing.text, 'hello 298457')
+        additional_text = [thing for thing in opml_special_page if thing.text.startswith(label)][0].text[len(label):]
+        label = 'VideoURL: '
+        video_url = [thing for thing in opml_special_page if thing.text.startswith(label)][0].text[len(label):]
+        video_title = title
+        special_page = Page(id=uuid.uuid4(), is_anchor_page=False, title=title, slug=slug,
+                            additional_text=additional_text, video_title=video_url, video_url=video_url,
+                            next_anchor_page_id='', supporting_anchor_page_id='', question_for_viewer='', student_responses=None)
+        pages.append(special_page)
+        special_pages.append(special_page)
+    for i, opml_anchor_page in enumerate(opml_anchor_pages[::-1]):
         print('i', i)
         title_text_raw = opml_anchor_page.text
         if title_text_raw == 'Title: Wrapping up' or title_text_raw== 'title Let\'s take a first look at the code for this lesson.':
@@ -108,10 +131,13 @@ def parse_opml_course_from_workflowy():
         pages.append(page)
         pages.extend(supporting_pages)
         future_anchor_page = page
-        print(page)
-
-        if i == 1:
-            pprint.pprint(page)
+        # print(page)
+    for page in pages:
+        # this is so hacky
+        if page.title != "So you have a question that wasn't listed":
+            page.student_responses.list_of_responses.append(
+                Response('I have a question not listed here.', special_pages[0].id)
+            )
     return pages
 
 

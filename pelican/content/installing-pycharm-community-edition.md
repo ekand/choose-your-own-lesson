@@ -14,5 +14,7 @@ slug: installing-pycharm-community-edition
 
 [How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail.](installing-pycharm-community-edition.html)
 
+[I have a question not listed here.](so-you-have-a-question-that-wasnt-listed.html)
+
 
 

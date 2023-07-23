@@ -24,5 +24,7 @@ slug: about-python
 
 [I have no more questions, take me to the next Anchor Video:](software-setup.html)
 
+[I have a question not listed here.](so-you-have-a-question-that-wasnt-listed.html)
+
 
 
