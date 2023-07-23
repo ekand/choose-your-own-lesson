@@ -6,11 +6,13 @@ import copy
 from my_classes import Page, Response, StudentResponses
 
 
-def parse_opml_course_from_workflowy():
+def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=False):
 
     outline = opml.parse('input/pages.opml')
+
     # print(outline)
     opml_learn_python_by_making_music = outline[0]
+    print(type(opml_learn_python_by_making_music))
     opml_the_code = outline[0]
     opml_anchor_pages = opml_learn_python_by_making_music[1]
     opml_special_pages = opml_learn_python_by_making_music[2]
@@ -18,7 +20,8 @@ def parse_opml_course_from_workflowy():
     future_anchor_page = None
     special_pages = []
     for i, opml_special_page in enumerate(opml_special_pages):
-        print('i', i, 'hello 289457298374')
+        if debug_output:
+            print('i', i, 'hello 289457298374')
         title_text_raw = opml_special_page.text
         label = 'Title: '
         assert title_text_raw.startswith(label)
@@ -26,7 +29,8 @@ def parse_opml_course_from_workflowy():
         slug = slugify(title)
         label = 'AdditionalText: '
         for thing in opml_special_page:
-            print(thing.text, 'hello 298457')
+            if debug_output:
+                print(thing.text, 'hello 298457')
         additional_text = [thing for thing in opml_special_page if thing.text.startswith(label)][0].text[len(label):]
         label = 'VideoURL: '
         video_url = [thing for thing in opml_special_page if thing.text.startswith(label)][0].text[len(label):]
@@ -37,7 +41,8 @@ def parse_opml_course_from_workflowy():
         pages.append(special_page)
         special_pages.append(special_page)
     for i, opml_anchor_page in enumerate(opml_anchor_pages[::-1]):
-        print('i', i)
+        if debug_output:
+            print('i', i)
         title_text_raw = opml_anchor_page.text
         if title_text_raw == 'Title: Wrapping up' or title_text_raw== 'title Let\'s take a first look at the code for this lesson.':
             continue
@@ -45,7 +50,8 @@ def parse_opml_course_from_workflowy():
             continue
         #if title_text_raw == 'Title: Software Setup':
          #   continue
-        print('title_text_raw', title_text_raw)
+        if debug_output:
+            print('title_text_raw', title_text_raw)
         label = 'Title: '
         assert title_text_raw.startswith(label)
         title = opml_anchor_page.text[len(label):]
@@ -65,14 +71,14 @@ def parse_opml_course_from_workflowy():
         question_for_viewer = [thing for thing in opml_anchor_page if thing.text.startswith(tag_or_key_whatevs)][0].text[len(tag_or_key_whatevs):]
         tag_or_key_whatevs = 'StudentResponses:'
         opml_student_responses = [thing for thing in opml_anchor_page if thing.text.startswith(tag_or_key_whatevs)][0]
-        print('Student responses')
+        # ('Student responses')
         student_responses = []
-        print('hi')
+        # rint('hi')
         supporting_pages = []
         for opml_student_response in opml_student_responses:
             label = 'Response: '
             if opml_student_response.text.startswith(label):
-                print('opml_student_response.text', opml_student_response.text)
+                # print('opml_student_response.text', opml_student_response.text)
                 student_response_text = opml_student_response.text[len(label):]
                 id_of_page_with_answer = ''  # todo
                 student_response = Response(student_response_text, id_of_page_with_answer)
@@ -108,7 +114,7 @@ def parse_opml_course_from_workflowy():
             else:
                 print('Warning: opml_student_response:', opml_student_response.text)
 
-        print(student_responses)
+        # print(student_responses)
         if future_anchor_page is not None:
             student_responses.append(Response("I have no questions, take me to the next Anchor Video:", future_anchor_page.id))
         page = Page(id=str(uuid.uuid4()), is_anchor_page=True,
@@ -121,9 +127,9 @@ def parse_opml_course_from_workflowy():
 
         # page.student_responses = StudentResponses([Response('sometext', 'some_id')])
         #StudentResponses([Response()])
-        print('for response, answer_page in zip(page.student_responses.list_of_responses, supporting_pages):')
-        print('page.student_responses.list_of_responses', page.student_responses.list_of_responses)
-        print('supporting_pages', supporting_pages)
+        #print('for response, answer_page in zip(page.student_responses.list_of_responses, supporting_pages):')
+        #print('page.student_responses.list_of_responses', page.student_responses.list_of_responses)
+        #print('supporting_pages', supporting_pages)
         for response, answer_page in zip(page.student_responses.list_of_responses, supporting_pages):
             response.id_of_page_with_answer = answer_page.id
         for supporting_page in supporting_pages:
@@ -138,7 +144,11 @@ def parse_opml_course_from_workflowy():
             page.student_responses.list_of_responses.append(
                 Response('I have a question not listed here.', special_pages[0].id)
             )
-    return pages
+
+    if return_outline_too:
+        return pages, opml_learn_python_by_making_music
+    else:
+        return pages
 
 
 def slugify(text):
