@@ -1,5 +1,5 @@
 ---
-name: I have another questions
+name: I have another question
 about: This is a template to make it easy and effective for learners to ask questions
   that aren't already covered on the "Choose Your Own Lesson" page.
 title: "[Your question here]"
