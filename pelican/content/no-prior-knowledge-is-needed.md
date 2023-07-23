@@ -22,7 +22,7 @@ slug: no-prior-knowledge-is-needed
 
 [Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?](setup-and-installation.html)
 
-[I have no questions, take me to the next Anchor Video:](software-setup.html)
+[I have no more questions, take me to the next Anchor Video:](software-setup.html)
 
 
 
