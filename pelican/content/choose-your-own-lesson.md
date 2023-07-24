@@ -12,7 +12,7 @@ slug: choose-your-own-lesson
 
 [Why would I want to learn Python By making music?](why-you-might-want-to-learn-python-by-making-music.html)
 
-[What is Choose Your Own Lesson?](choose-your-own-lesson.html)
+[What is Choose Your Own Lesson????](choose-your-own-lesson.html)
 
 [What is Python?](about-python.html)
 

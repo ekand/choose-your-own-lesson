@@ -4,6 +4,8 @@ import uuid
 import opml
 import copy
 
+import asyncio
+
 from opyml import OPML
 
 import notion_play
@@ -12,15 +14,17 @@ from my_classes import Page, Response, StudentResponses
 
 def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=False):
 
-    outline2 = opml.parse('input/pages.opml')
+    # outline2 = opml.parse('input/pages.opml')
     #ID = '398cf35c258b4d939c29ca1f3b6203fa'
     # ID = 'd23b3d26680241328840448db039ee6e'
     ID = 'c929fc48e3354c0894e09b393975bb7f'
 
 
-    load_from_notion = False
+    load_from_notion = True
     if load_from_notion:
-        opyml_outline = notion_play.walk_children(ID)
+        # opyml_outline = asyncio.run(notion_play.walk_children(ID))
+        # opyml_outline = notion_play.walk_children(ID)
+        opyml_outline = notion_play.blocking_function(ID)
         document = OPML()
         document.body.outlines.append(opyml_outline)
         with open('interim/opyml_document.xml', 'w') as f:

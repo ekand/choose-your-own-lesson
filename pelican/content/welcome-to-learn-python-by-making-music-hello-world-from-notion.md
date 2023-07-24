@@ -1,14 +1,14 @@
-Title: No Prior Knowledge Is Needed
+Title: Welcome to Learn Python By Making Music, Hello World! FROM NOTION!
 Date: 2023-07-21
 Category: Lesson
-slug: no-prior-knowledge-is-needed
+slug: welcome-to-learn-python-by-making-music-hello-world-from-notion
 
 
 
 ### Watch this video:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VideoURL: videlurl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ asdf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-###Do you have any additional questions?
+###Do you have any questions?
 
 [Why would I want to learn Python By making music?](why-you-might-want-to-learn-python-by-making-music.html)
 
@@ -22,7 +22,7 @@ slug: no-prior-knowledge-is-needed
 
 [Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?](setup-and-installation.html)
 
-[I have no more questions, take me to the next Anchor Video:](software-setup.html)
+[I have no questions, take me to the next Anchor Video:](software-setup.html)
 
 [I have a question not listed here.](so-you-have-a-question-that-wasnt-listed.html)
 
