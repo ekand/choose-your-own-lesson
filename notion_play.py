@@ -7,7 +7,7 @@ from opyml import OPML, Outline
 
 from dotenv import load_dotenv
 
-# from utility import parse_opml_course_from_workflowy
+#from utility import parse_opml_course_from_workflowy
 
 from pprint import pprint
 
@@ -33,8 +33,7 @@ def setup_notion():
 
 
 def walk_and_print_opml(opml_outline, indent = 0, max_depth_to_print = 2):
-
-    # # not this? # assert(type(opml_outline) == opml.OutlineElement), f'type(opml_outline) was {type(opml_outline)}'
+    #assert(type(opml_outline) == opml.OutlineElement), f'type(opml_outline) was {type(opml_outline)}'
     output_s = ''
     indent_steepness = 3
     if opml_outline is None:
@@ -52,22 +51,22 @@ RECURSION_ITERATION_MAXIMUM = 1000
 
 maximum_recusion_depth_to_print = 3
 
-def walk_children(child_id, document=None, outline=None, notion=None, debug=False):
+def walk_children(child_id, outline=None, notion=None, debug=False):
     """Walk through Notion blocks, recursively including children,
     and store plain text values to an opml outline"""
-    print('hi 29857')
 
     # this is hacky
     global recursion_iteration_counter
 
     recursion_iteration_counter += 1
     if recursion_iteration_counter > RECURSION_ITERATION_MAXIMUM:
-        return outline, document
+        print('maxed out!')
+        return outline
 
     if notion is None:
         notion = setup_notion()
 
-    if document is None:
+    if outline is None:
         document = OPML()
         document.body.outlines.append(Outline(text="Outline"))
         outline = document.body.outlines[0]
@@ -76,9 +75,9 @@ def walk_children(child_id, document=None, outline=None, notion=None, debug=Fals
 
     if debug:
         print('hi debug 1234123')
-        #walk_and_print_opml(outline)
+        walk_and_print_opml(outline)
 
-    for child in children['results'][1:]:
+    for child in children['results'][:]:  # why [1:] ?
         child_id = child['id']
         block = notion.blocks.retrieve(child_id)
         print(block)
@@ -87,18 +86,20 @@ def walk_children(child_id, document=None, outline=None, notion=None, debug=Fals
         current_outline = None
         for rich_text_object in block[the_type]['rich_text']:
             text = rich_text_object['plain_text']
+            print(text)
             current_outline = Outline(text=text)
             outline.outlines.append(current_outline)
-        if child['has_children'] and current_outline is not None:
-            # walk_and_print_opml(outline)
+        if child['has_children']:
+            walk_and_print_opml(outline)
             walk_children(child['id'], notion=notion, outline=current_outline)
-            # walk_and_print_opml(outline)
-    return outline, document
+            walk_and_print_opml(outline)
+    return outline
 
 
 if __name__ == '__main__':
     ID = '398cf35c258b4d939c29ca1f3b6203fa'
+    ID = 'd23b3d26680241328840448db039ee6e'
     test_opml_outline = walk_children(ID, debug=True)
     print(type(test_opml_outline))
-    # test_opml_outline = parse_opml_course_from_workflowy(return_outline_too=True)[1]
-    #print(walk_and_print_opml(test_opml_outline))
+#    test_opml_outline = parse_opml_course_from_workflowy(return_outline_too=True)[1]
+    print(walk_and_print_opml(test_opml_outline))

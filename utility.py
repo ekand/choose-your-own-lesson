@@ -4,6 +4,8 @@ import uuid
 import opml
 import copy
 
+from opyml import OPML
+
 import notion_play
 from my_classes import Page, Response, StudentResponses
 
@@ -11,24 +13,27 @@ from my_classes import Page, Response, StudentResponses
 def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=False):
 
     outline2 = opml.parse('input/pages.opml')
-    ID = '398cf35c258b4d939c29ca1f3b6203fa'
-    # ID = '0e2895f338c8414cb0aa6844c0047566'
+    #ID = '398cf35c258b4d939c29ca1f3b6203fa'
+    # ID = 'd23b3d26680241328840448db039ee6e'
+    ID = 'c929fc48e3354c0894e09b393975bb7f'
 
 
-    load_from_notion = True
+    load_from_notion = False
     if load_from_notion:
-        opyml_outline, opyml_document = notion_play.walk_children(ID)
+        opyml_outline = notion_play.walk_children(ID)
+        document = OPML()
+        document.body.outlines.append(opyml_outline)
         with open('interim/opyml_document.xml', 'w') as f:
-            f.write(opyml_document.to_xml())
-    thingy = opml.parse('interim/opyml_document.xml')
-    other_thingy = thingy[0]
+            f.write(document.to_xml())
+    parsed_xml = opml.parse('interim/opyml_document.xml')
+    opml_outline = parsed_xml[0]
     # outline = other_thingy
     # print(outline)
     #opml_learn_python_by_making_music = other_thingy
     #print(type(opml_learn_python_by_making_music))
     #opml_the_code = outline[0]
-    opml_anchor_pages = other_thingy[0]
-    opml_special_pages = other_thingy[1]
+    opml_anchor_pages = opml_outline[0]
+    opml_special_pages = opml_outline[1]
     pages = []
     future_anchor_page = None
     special_pages = []
@@ -48,8 +53,8 @@ def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=Fals
         label = 'VideoURL: '
         video_url = [thing for thing in opml_special_page if thing.text.startswith(label)][0].text[len(label):]
         video_title = title
-        special_page = Page(id=uuid.uuid4(), is_anchor_page=False, title=title, slug=slug,
-                            additional_text=additional_text, video_title=video_url, video_url=video_url,
+        special_page = Page(id=str(uuid.uuid4()), is_anchor_page=False, title=title, slug=slug,
+                            additional_text=additional_text, video_title=video_title, video_url=video_url,
                             next_anchor_page_id='', supporting_anchor_page_id='', question_for_viewer='', student_responses=None)
         pages.append(special_page)
         special_pages.append(special_page)
@@ -153,7 +158,8 @@ def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=Fals
         # print(page)
     for page in pages:
         # this is so hacky
-        if page.title != "So you have a question that wasn't listed":
+        if not page.title.startswith("So you have a question that wasn"):
+            print(page.title)
             page.student_responses.list_of_responses.append(
                 Response('I have a question not listed here.', special_pages[0].id)
             )
