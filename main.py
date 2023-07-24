@@ -6,6 +6,7 @@ from utility import parse_opml_course_from_workflowy
 
 pages = parse_opml_course_from_workflowy()
 # print(pages)
+
 # pprint.pprint(pages)
 for page in pages:
     if page.video_title == '':

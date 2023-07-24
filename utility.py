@@ -1,21 +1,34 @@
+import pickle
 import pprint
 import uuid
 import opml
 import copy
 
+import notion_play
 from my_classes import Page, Response, StudentResponses
 
 
 def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=False):
 
-    outline = opml.parse('input/pages.opml')
+    outline2 = opml.parse('input/pages.opml')
+    ID = '398cf35c258b4d939c29ca1f3b6203fa'
+    # ID = '0e2895f338c8414cb0aa6844c0047566'
 
+
+    load_from_notion = True
+    if load_from_notion:
+        opyml_outline, opyml_document = notion_play.walk_children(ID)
+        with open('interim/opyml_document.xml', 'w') as f:
+            f.write(opyml_document.to_xml())
+    thingy = opml.parse('interim/opyml_document.xml')
+    other_thingy = thingy[0]
+    # outline = other_thingy
     # print(outline)
-    opml_learn_python_by_making_music = outline[0]
-    print(type(opml_learn_python_by_making_music))
-    opml_the_code = outline[0]
-    opml_anchor_pages = opml_learn_python_by_making_music[1]
-    opml_special_pages = opml_learn_python_by_making_music[2]
+    #opml_learn_python_by_making_music = other_thingy
+    #print(type(opml_learn_python_by_making_music))
+    #opml_the_code = outline[0]
+    opml_anchor_pages = other_thingy[0]
+    opml_special_pages = other_thingy[1]
     pages = []
     future_anchor_page = None
     special_pages = []
@@ -145,10 +158,10 @@ def parse_opml_course_from_workflowy(return_outline_too=False, debug_output=Fals
                 Response('I have a question not listed here.', special_pages[0].id)
             )
 
-    if return_outline_too:
-        return pages, opml_learn_python_by_making_music
-    else:
-        return pages
+    # if return_outline_too:
+    #     return pages, opml_learn_python_by_making_music
+
+    return pages
 
 
 def slugify(text):
