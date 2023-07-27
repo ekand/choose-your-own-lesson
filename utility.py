@@ -8,7 +8,7 @@ from my_classes import Page, Response, StudentResponses
 
 def parse_opml_course_from_workflowy():
 
-    outline = opml.parse('input/pages.opml')
+    outline = opml.parse('input/WF - Learn Python By Making M.opml')
     # print(outline)
     opml_learn_python_by_making_music = outline[0]
     opml_the_code = outline[0]

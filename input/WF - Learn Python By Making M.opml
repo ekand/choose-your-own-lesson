@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<opml version="2.0">
+  <head>
+    <ownerEmail>
+      hastyquickbeam@gmail.com
+    </ownerEmail>
+  </head>
+  <body>
+    <outline text="Learn Python By Making Music: Hello, World!">
+      <outline text="The code" _note="Text&#10;import scamp&#10;&#10;&#10;def text_to_melody(text):&#10;    note_mapping = {&#10;        'H': 60,&#10;        'e': 62,&#10;        'l': 64,&#10;        'o': 65,&#10;        ',': 67,&#10;        ' ': 69,&#10;        'W': 71,&#10;        'r': 72,&#10;        'd': 74,&#10;    }&#10;&#10;    melody = []&#10;    for char in text:&#10;        note = note_mapping.get(char)&#10;        if note:&#10;            melody.append(note)&#10;&#10;    return melody&#10;&#10;&#10;def main():&#10;    text = &quot;Hello, World&quot;&#10;    melody = text_to_melody(text)&#10;&#10;    tempo = 120&#10;    s = scamp.Session(tempo=tempo)&#10;&#10;    violin = s.new_part('violin')&#10;&#10;    for note in melody:&#10;        violin.play_note(note, 0.8, 0.5)&#10;&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    main()&#10;&#10;" />
+      <outline text="AnchorPages:">
+        <outline text="Title: Welcome to Learn Python By Making Music, Hello World!">
+          <outline text="VideoTitle:" />
+          <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
+          <outline text="VideoScript:" _note="text&#10;Welcome to Learn Python By Making Music! This is a &quot;Choose Your Own Lesson&quot; Lesson produced by Erik K Anderson.&#10;" />
+          <outline text="QuestionForViewer: Do you have any questions?" />
+          <outline text="StudentResponses: ">
+            <outline text="Response: Why would I want to learn Python By making music?">
+              <outline text="Title: Why You Might Want To Learn Python By Making Music">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videourl" />
+                <outline text="VideoScript: " _note="text&#10;Learning Python by making music is a fun and creative way to explore programming. It offers immediate feedback and engages beginners. By combining music and Python, you will gain practical skills, problem-solving abilities, and access to a vibrant community of creative coders.&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" _note="&#10;" />
+              </outline>
+            </outline>
+            <outline text="Response: What is Choose Your Own Lesson?">
+              <outline text="Title: Choose Your Own Lesson">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videlurl" />
+                <outline text="VideoScript:" _note="text&#10;video script here&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+              </outline>
+            </outline>
+            <outline text="Response: What is Python?">
+              <outline text="Title: About Python">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videlurl" />
+                <outline text="VideoScript:" _note="text&#10;Python is a versatile and popular programming language known for its simplicity and readability.&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+              </outline>
+            </outline>
+            <outline text="Response: What will be the main focus of this lesson?">
+              <outline text="Title: The Main Focus Of This Lesson">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videlurl" />
+                <outline text="VideoScript:" _note="text&#10;We will learn some Python Programming basics by studying a simple and fun music “Hello World” program in Python.&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+              </outline>
+            </outline>
+            <outline text="Response: What prior knowledge or experience do we need for this lesson? Do we need to know anything about Python or music beforehand?">
+              <outline text="Title: No Prior Knowledge Is Needed">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videlurl" />
+                <outline text="VideoScript:" _note="text&#10;No Prior Knowledge is needed&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+              </outline>
+            </outline>
+            <outline text="Response: Are we going to use any specific libraries or tools in Python to create music? If so, will you guide us through the installation process?">
+              <outline text="Title: Setup And Installation">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videlurl" />
+                <outline text="VideoScript:" _note="text&#10;A future section of this lesson will cover installation and setup.&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated from parent anchor page&amp;gt;" />
+              </outline>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="Title: Software Setup">
+          <outline text="VideoTitle: " />
+          <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
+          <outline text="VideoScript:" _note="text&#10;This is the script" />
+          <outline text="QuestionForViewer: Do you have any questions?" />
+          <outline text="StudentResponses:">
+            <outline text="Response: How do I install Python? Can you guide me through the steps for my computer in detail?">
+              <outline text="Title: Installing Python">
+                <outline text="VideoTitle:" />
+                <outline text="VideoURL: videourl" />
+                <outline text="VideoScript: " _note="text&#10;installing Python" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated&amp;gt;" />
+              </outline>
+            </outline>
+            <outline text="Response: How do I install PyCharm Community Edition? Can you guide me through the steps for my computer in detail.">
+              <outline text="Title: Installing PyCharm Community Edition">
+                <outline text="VideoTitle: " />
+                <outline text="VideoURL: videourl" />
+                <outline text="VideoScript: " _note="text&#10;Video: Installing PyCharm Community Edition&#10;" />
+                <outline text="QuestionForViewer: Do you have any additional questions?" />
+                <outline text="StudentResponses: &amp;lt;auto-generated&amp;gt;" />
+              </outline>
+            </outline>
+          </outline>
+        </outline>
+        <outline text="Title: First Look At The Code">
+          <outline text="VideoTitle: " />
+          <outline text="VideoURL: videourl" />
+          <outline text="VideoScript:" _note="text&#10;This is the videl script... Here's what the code looks like. It's hosted on GitHub&#10;" />
+          <outline text="QuestionForViewer: Do you have any questions?" />
+          <outline text="StudentResponses: ">
+            <outline text="Response: What is GitHub?">
+              <outline text="Video: GitHub is …" />
+            </outline>
+            <outline text="Response: What does .py mean?">
+              <outline text=".py is a file extension which tells humans and computers that this is a Python source code file. " />
+            </outline>
+            <outline text="Response: Why is it called &lt;a href=&quot;http://main.py&quot;&gt;main.py&lt;/a&gt;?" />
+            <outline text="Response: Can I see the code myself?">
+              <outline text="Later on I will show you how to access the code itself. " />
+            </outline>
+            <outline text="Response: I don’t know what any of this means?">
+              <outline text="Don't worry, we'll break it down piece by piece." />
+            </outline>
+          </outline>
+        </outline>
+        <outline text="Title: Wrapping up">
+          <outline text="Anchor Video" />
+          <outline text="Possible Quesions">
+            <outline text="Can you tell us about any real-world applications of Python programming in the music industry? How is Python used in this context?">
+              <outline text="Um" />
+            </outline>
+            <outline text="Are we going to learn about Python programming, music theory, or a combination of both?">
+              <outline text="This lesson will be largely about Python programming, with a little bit of music theory incidentally mixed in." />
+            </outline>
+            <outline text="Will we have opportunities to experiment and customize the music we create, or will the lesson be more focused on following specific instructions?">
+              <outline text="This lesson will be more proscriptive, but you are always welcome to try modifying the code to suit your own creative desires. " />
+            </outline>
+          </outline>
+        </outline>
+      </outline>
+      <outline text="Special Pages:">
+        <outline text="Title: So you have a question that wasn't listed">
+          <outline text="VideoTitle:" />
+          <outline text="VideoURL: &amp;lt;videourl&amp;gt;" />
+          <outline text="VideoScript:" _note="text&#10;You have a different questions. That's good, it means you're curious. Please propose a new question for this lesson by going to the GitHub Issues page for this project and clicking &quot;New Issue&quot;. A link to that page will be below.&#10;" />
+          <outline text="AdditionalText: You are on this page because had a question that wasn't available on the previous page. Please go here &lt;a href=&quot;https://github.com/ekand/choose-your-own-lesson/issues&quot;&gt;https://github.com/ekand/choose-your-own-lesson/issues&lt;/a&gt; to ask your question on GitHub. If it's a good question, it might even get added to this lesson!" _note="&#10;" />
+        </outline>
+      </outline>
+      <outline text="" />
+    </outline>
+  </body>
+</opml>
