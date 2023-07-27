@@ -1,2 +1,2 @@
 Todo
-- design data
+- write lesson content
